@@ -9,7 +9,7 @@ env:
 before_script:
   - mkdir -p $LOGS_DIR
   - npm install -g grunt-cli
-  - grunt bower
+  - grunt -d --stack bower
 
 script:
   - ./travis_build.sh
